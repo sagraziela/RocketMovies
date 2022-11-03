@@ -8,6 +8,7 @@ export default {
         GRAY_800: "#262529",
         GRAY_900: "#1C1B1E",
 
-        PINK: "#FF859B"
+        PINK: "#FF859B",
+        PINK_TRANSPARENT: "#FF859B0F"
     }
 }

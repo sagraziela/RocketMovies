@@ -16,7 +16,6 @@ export function Details() {
 
                 <MovieInfo 
                 title="Interestellar"
-                rate={4}
                 author="Graziela Antunes"
                 dateTime="02/11/2022 às 17:52h"
                 />
