@@ -4,13 +4,11 @@ import { Stars } from "../Stars";
 
 export function Card({ data, ...rest }) {
     return (
-        <Container {...rest}>
-            <header>
+        <Container to={'/details/'+ data.id} {...rest}>
+            <><header>
                 <h1> {data.title} </h1>
                 <Stars rate={data.rate} />
-            </header>
-    
-            <p>{data.comments && data.comments}</p>
+            </header><p>{data.comments && data.comments}</p></>
 
             {
             data.tags && 

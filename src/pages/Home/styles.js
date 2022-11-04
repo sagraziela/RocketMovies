@@ -17,14 +17,15 @@ export const Content = styled.div`
         justify-content: space-between;
         margin-bottom: 40px;
 
-        button {
+        a {
+            text-decoration: none;
             display: flex;
             align-items: center;
             gap: 8px;
             background: ${({ theme }) => theme.COLORS.PINK};
             color: ${({ theme }) => theme.COLORS.GRAY_800};
             padding: 8px 16px;
-            font-weight: 700;
+            font-weight: 500;
 
             border: none;
             border-radius: 8px;
@@ -37,7 +38,7 @@ export const Content = styled.div`
             }
         }
 
-        > button:hover {
+        > a:hover {
             filter: brightness(.9);
         }
     }

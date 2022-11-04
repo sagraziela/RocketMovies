@@ -10,8 +10,11 @@ export const Container = styled.header`
 
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
 
-    > h2 {
-        color: ${({ theme }) => theme.COLORS.PINK};
+    > a {
+        text-decoration: none;
+        h2 {
+            color: ${({ theme }) => theme.COLORS.PINK};
+    }
     }
 `;
 
@@ -57,10 +60,12 @@ export const Profile = styled.div`
         }
     }
 
-    > img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        border: 2px solid ${({ theme }) => theme.COLORS.GRAY_300};
+    > a {
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid ${({ theme }) => theme.COLORS.GRAY_300};
+        }
     }
 `;

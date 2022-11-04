@@ -11,7 +11,7 @@ export function NewMovie() {
             <Header />
 
             <Form>
-                <ButtonText title="Voltar" />
+                <ButtonText to="/" title="Voltar" hasArrow />
 
                 <h1>Novo filme</h1>
 
@@ -26,9 +26,7 @@ export function NewMovie() {
                     <p>Marcadores</p>
 
                     <div className="tags">
-                        <TagInput value="Romance" />
                         <TagInput value="Comédia" />
-                        <TagInput value="Ação" />
                         <TagInput value="Suspense" />
                         <TagInput isNew />
                     </div>

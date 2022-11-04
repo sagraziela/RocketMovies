@@ -1,10 +1,10 @@
 import { Container } from "./styles";
 import { FiArrowLeft } from 'react-icons/fi'
 
-export function ButtonText({ title, href }) {
+export function ButtonText({ title, to, hasArrow }) {
     return (
-        <Container href={href}>
-            <FiArrowLeft />
+        <Container to={to}>
+            {hasArrow && <FiArrowLeft size={20} />}
             {title}
         </Container>
     )

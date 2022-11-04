@@ -2,6 +2,7 @@ import { Input } from "../../components/Input";
 import { Container, Form, Background } from "./styles";
 import { FiMail, FiLock } from 'react-icons/fi'
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 
 export function SignIn() {
     return (
@@ -19,7 +20,7 @@ export function SignIn() {
 
                 <Button title="Entrar" />
 
-                <a href="#">Criar conta</a>
+                <ButtonText to="/register" title="Criar conta" />
             </Form>
 
             <Background />

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export function Header() {
     return (
         <Container>
-            <h2>RocketMovies</h2>
+            <Link to="/">
+                <h2>RocketMovies</h2>
+            </Link>
             
             <Input>
                 <input type="text" placeholder="Pesquise pelo título" />
@@ -16,7 +18,9 @@ export function Header() {
                     <a href="/">sair</a>
                 </div>
 
-                <img src="https://github.com/sagraziela.png" alt="Foto do usuário" />
+                <Link to="/profile">
+                    <img src="https://github.com/sagraziela.png" alt="Foto do usuário" />
+                </Link>
             </Profile>
         </Container>
     )

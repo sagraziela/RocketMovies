@@ -21,7 +21,7 @@ export function SignUp() {
 
                 <Button title="Cadastrar" />
 
-                <ButtonText title="Voltar para o login" />
+                <ButtonText to="/" title="Voltar para o login" />
             </Form>
 
             <Background />

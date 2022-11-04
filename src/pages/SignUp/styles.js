@@ -43,12 +43,8 @@ export const Form = styled.form`
 
     > a {
         display: flex;
-        align-items: center;
         justify-content: center;
         margin-top: 42px;
-
-        text-decoration: none;
-        color: ${({ theme }) => theme.COLORS.PINK};
     }
 
 `;

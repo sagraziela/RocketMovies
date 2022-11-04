@@ -10,7 +10,7 @@ export function Details() {
             <Header />
 
             <Content>
-                <ButtonText title="Voltar" href="#" />
+                <ButtonText to="/" title="Voltar" hasArrow />
 
                 <MovieInfo 
                 title="Interestellar"

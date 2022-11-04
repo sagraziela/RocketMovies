@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Container = styled.button`
+export const Container = styled(Link)`
     width: 100%;
     background: ${({ theme }) => theme.COLORS.PINK_TRANSPARENT};
     display: flex;
@@ -8,14 +9,16 @@ export const Container = styled.button`
     justify-content: left;
     gap: 16px;
     padding: 24px;
+    text-decoration: none;
 
     border: none;
     border-radius: 10px;
 
     cursor: pointer;
+    transition: .3s;
 
     :hover {
-        filter: saturate(1.2);
+        background: #FF859B21;
     }
 
     > header {

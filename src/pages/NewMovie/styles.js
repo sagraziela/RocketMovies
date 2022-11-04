@@ -39,6 +39,10 @@ export const Form = styled.form`
         background-color: ${({ theme }) => theme.COLORS.GRAY_700};
     }
 
+    > a {
+        margin-bottom: 32px;
+    }
+
     > .movieTitle {
         display: flex;
         align-items: center;
