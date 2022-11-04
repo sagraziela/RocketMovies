@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    height: 222px;
     width: 100%;
     background: ${({ theme }) => theme.COLORS.PINK_TRANSPARENT};
     display: flex;
@@ -35,6 +34,7 @@ export const Container = styled.button`
     }
 
     div {
+        height: fit-content;
         display: flex;
         gap: 8px;
     }

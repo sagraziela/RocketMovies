@@ -30,18 +30,6 @@ export const Content = styled.main`
         background-color: ${({ theme }) => theme.COLORS.GRAY_700};
     }
 
-    > a {
-        display: flex;
-        align-items: center;
-        margin-bottom: 24px;
-        text-decoration: none;
-        color: ${({ theme }) => theme.COLORS.PINK};
-
-        > svg {
-            color: ${({ theme }) => theme.COLORS.PINK};
-        }
-    }
-
     > p {
         text-align: justify;
         margin-top: 40px;

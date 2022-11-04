@@ -2,6 +2,7 @@ import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
 import { FiArrowLeft } from 'react-icons/fi';
 import { MovieInfo } from "../../components/MovieInfo";
+import { ButtonText } from "../../components/ButtonText";
 
 export function Details() {
     return (
@@ -9,10 +10,7 @@ export function Details() {
             <Header />
 
             <Content>
-                <a href="#">
-                    <FiArrowLeft />
-                    Voltar
-                </a>
+                <ButtonText title="Voltar" href="#" />
 
                 <MovieInfo 
                 title="Interestellar"
