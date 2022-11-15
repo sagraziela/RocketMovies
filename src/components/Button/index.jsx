@@ -1,8 +1,11 @@
 import { Container } from "./styles";
 
-export function Button({ title, darkBg }) {
+export function Button({ title, darkBg, ...rest }) {
     return (
-        <Container darkBg={darkBg}>
+        <Container 
+        darkBg={darkBg}
+        {...rest}
+        >
             {title}
         </Container>
     )
