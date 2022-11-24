@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.COLORS.GRAY_700};
+        background: ${({ theme }) => theme.COLORS.GRAY_800};
         height: 100vh;
         width: 100%;
 

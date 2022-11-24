@@ -12,9 +12,6 @@ export const Container = styled.div`
         gap: 12px;
         justify-content: space-between;
         padding: 16px;
-        background-color: ${({ theme }) => theme.COLORS.GRAY_900};
-
-        border-radius: 10px;
         flex-wrap: wrap;
     }
 `;
@@ -23,7 +20,7 @@ export const Form = styled.form`
     grid-area: content;
     height: 73vh;
     margin: 40px 108px 80px 120px;
-    padding-right: 8px;
+    padding: 0 8px 16px 0;
     overflow-y: auto;
 
     ::-webkit-scrollbar {
@@ -37,6 +34,7 @@ export const Form = styled.form`
 
     ::-webkit-scrollbar-track {
         background-color: ${({ theme }) => theme.COLORS.GRAY_700};
+        border-radius: 8px;
     }
 
     > a {
@@ -68,7 +66,7 @@ export const Textarea = styled.textarea`
     align-items: center;
     resize: none;
 
-    background-color: ${({ theme }) => theme.COLORS.GRAY_500};
+    background-color: ${({ theme }) => theme.COLORS.GRAY_700};
     
     border: none;
     border-radius: 10px;
@@ -94,5 +92,12 @@ export const Markers = styled.div`
         justify-content: left;
         text-align: left;
         font-size: 20px;
+    }
+
+    > section {
+        padding: 16px;
+        background-color: ${({ theme }) => theme.COLORS.GRAY_900};
+
+        border-radius: 10px;
     }
 `;

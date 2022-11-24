@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 56px;
-    background-color: ${({ theme }) => theme.COLORS.GRAY_500};
+    background-color: ${({ theme }) => theme.COLORS.GRAY_700};
     border-radius: 10px;
 
     display: flex;
@@ -17,6 +17,7 @@ export const Container = styled.div`
 
     > input {
         width: 100%;
+        height: 100%;
         background: transparent;
         border: none;
         outline: none;
@@ -26,5 +27,21 @@ export const Container = styled.div`
         ::placeholder {
             color: ${({ theme }) => theme.COLORS.GRAY_300};
         }
+
+        ::-webkit-outer-spin-button,
+        ::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        :-webkit-autofill {
+            box-shadow: none;
+            -webkit-box-shadow: 0 0 0px 30px ${({ theme }) => theme.COLORS.GRAY_700} inset;
+            -webkit-text-fill-color: ${({ theme }) => theme.COLORS.GRAY_100};
+        }
+    }
+
+    input[type=number] {
+            -moz-appearance:textfield;
     }
 `;

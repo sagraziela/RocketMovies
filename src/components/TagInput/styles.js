@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    width: 240px;
     display: flex;
     align-items: center;
     border-radius: 10px;
     outline: 2px ${({ theme }) => theme.COLORS.PINK};
 
-    background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.GRAY_500};
+    background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.GRAY_700};
 
     border: ${({ theme, isNew }) => isNew ? `3px solid ${theme.COLORS.GRAY_300}` : "none"};
 

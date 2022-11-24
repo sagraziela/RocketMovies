@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     display: grid;
@@ -6,6 +7,10 @@ export const Container = styled.div`
     grid-template-areas: 
     "header"
     "content";
+
+    @media (max-width: 780px) {
+        grid-template-rows: 80px auto; 
+    }
 `;
 
 export const Content = styled.div`
@@ -42,6 +47,15 @@ export const Content = styled.div`
             filter: brightness(.9);
         }
     }
+
+    @media (max-width: 780px) {
+        margin: 24px 54px 24px 60px;
+        font-size: smaller;
+
+        > header {
+            margin-bottom: 16px;
+        }
+    }
 `;
 
 export const Main = styled.main`
@@ -50,7 +64,7 @@ export const Main = styled.main`
     flex-direction: column;
     gap: 16px;
     padding: 8px 8px 8px 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     ::-webkit-scrollbar {
         width: 12px;
@@ -63,5 +77,29 @@ export const Main = styled.main`
 
     ::-webkit-scrollbar-track {
         background: ${({ theme }) => theme.COLORS.GRAY_700};
+        border-radius: 10px;
+    }
+`;
+
+export const AddFirstMovieBanner = styled(Link)`
+    width: 100%;
+    height: 90%;
+    background: ${({ theme }) => theme.COLORS.PINK_TRANSPARENT};
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    text-decoration: none;
+
+    > svg {
+        color: ${({ theme }) => theme.COLORS.PINK};
+    }
+
+    :hover {
+        background: #FF859B21;
     }
 `;

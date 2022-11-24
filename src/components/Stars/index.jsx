@@ -4,7 +4,6 @@ import { AiFillStar, AiOutlineStar } from 'react-icons/Ai';
 export function Stars({ rate }) {
 
     let movieRate = [];
-    console.log(rate)
 
     for(let i = 1; i <= rate; i++) {
         movieRate.push(<AiFillStar key={i}/>)

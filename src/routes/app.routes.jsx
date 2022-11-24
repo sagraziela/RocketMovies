@@ -3,8 +3,7 @@ import { Home } from "../pages/Home";
 import { Details } from "../pages/Details";
 import { Profile } from "../pages/Profile";
 import { NewMovie } from "../pages/NewMovie";
-import { SignIn } from "../pages/SignIn";
-import { SignUp } from "../pages/SignUp";
+
 
 export function AppRoutes() {
     return (

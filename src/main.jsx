@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <GlobalStyles />
         <AuthProvider>
           <Router />
-          </AuthProvider>
+        </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>
 )

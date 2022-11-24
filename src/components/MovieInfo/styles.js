@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
     display: grid;
     grid-template-areas: 
@@ -12,6 +11,7 @@ export const Container = styled.div`
     > section {
         display: flex;
         gap: 8px;
+        margin-bottom: 40px;
     }
 `;
 
@@ -23,17 +23,6 @@ export const Title = styled.div`
     gap: 20px;
 
     margin-bottom: 24px;
-
-    > span {
-        display: flex;
-        align-items: center;
-        
-        svg {
-            color: ${({ theme }) => theme.COLORS.PINK};
-            width: 20px;
-            height: 20px;
-        }
-    }
 `;
 
 export const Author = styled.div`
@@ -49,11 +38,12 @@ export const Author = styled.div`
         width: 16px;
         height: 16px;
         border-radius: 50%;
+        font-size: 12px;
     }
 
     > p {
         display: flex;
-        gap: 8px;
+        gap: 12px;
 
         span {
             display: flex;

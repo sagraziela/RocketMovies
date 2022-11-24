@@ -15,7 +15,7 @@ export const Content = styled.main`
     grid-area: content;
     margin: 40px 108px 80px 120px;
     padding: 0 24px 24px 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     ::-webkit-scrollbar {
         width: 12px;
@@ -30,8 +30,29 @@ export const Content = styled.main`
         background-color: ${({ theme }) => theme.COLORS.GRAY_700};
     }
 
+    > section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            > svg {
+            color: ${({ theme }) => theme.COLORS.PINK};
+            }
+
+            :hover {
+                svg {
+                    filter: brightness(.9);
+                }
+            }
+        }
+    }
+
     > p {
         text-align: justify;
-        margin-top: 40px;
     }
 `;
